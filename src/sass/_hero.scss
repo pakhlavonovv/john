@@ -1,0 +1,89 @@
+.hero{
+    margin-top: 50px;
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .hero_wrapper{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        gap: 20px;
+        .hero_left{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            button{
+                width: 70%;
+                height: 47px;
+                background-color: #FF6464;
+                border-radius: 5px;
+                border: none;
+                color: white;
+                font-size: 16px;
+                &:hover{
+                    color: #FF6464;
+                    border: 1px solid #FF6464;
+                    background-color: transparent;
+                }
+            }
+        }
+        .hero_right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+@media (min-width: 600px) {
+    .hero{
+        .hero_wrapper{
+            display: grid;
+            grid-template-columns: auto auto; 
+            .hero_left{
+                text-align: start;
+                align-items: start;
+            }  
+        }
+    }
+}
+@media (min-width: 720px) {
+    .hero{
+        .hero_wrapper{
+            .hero_left{
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                h1{
+                    font-size: 35px;
+                }
+                button{
+                    width: 208px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .hero{
+        margin-top: 100px;
+        .hero_wrapper{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-around;
+            .hero_left{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h1{
+                    font-size: 44px;
+                }
+            }
+        }
+    }
+}
